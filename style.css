@@ -1,0 +1,142 @@
+
+
+
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#sudoku-container {
+    display: flex;
+    justify-content: center;
+}
+
+#sudoku-grid {
+    width: 540px;
+    height: 540px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#sudoku-grid td {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    color: black;
+    background-color: rgb(181, 131, 214);
+    border: 1px solid darkolivegreen;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sudoku-grid input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 24px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Dikke verticale lijnen */
+#sudoku-grid td:nth-child(3),
+#sudoku-grid td:nth-child(6) {
+    border-right: 3px solid darkolivegreen;
+}
+
+/* Dikke horizontale lijnen */
+#sudoku-grid tr:nth-child(3) td,
+#sudoku-grid tr:nth-child(6) td {
+    border-bottom: 3px solid darkolivegreen;
+}
+
+#sudoku-grid {
+    border: 3px solid darkolivegreen;
+}
+
+button#controleer-knop {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: mediumslateblue;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tussenpagina {
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.tussenpagina img {
+    display: block;
+    height: 90vh;
+    max-height: 90vh;
+    max-width: 100%;
+    width: auto;
+}
+
+.tussenpagina button {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 12px 20px;
+    background-color: #f5e6c8;
+    color: #59402e;
+    border: 1px solid #8b6b4e;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.briefpagina {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.briefpagina img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fotopagina {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.fotopagina img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+    
+.afsluiting {
+    text-align: center;
+    padding: 40px 20px 60px;
+    color: #795b43;
+    font-family: Georgia, serif;
+}
+
+.afsluiting h2 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.afsluiting p {
+    font-size: 30px;
+}
